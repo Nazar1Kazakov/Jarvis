@@ -21,7 +21,7 @@ def listen_voice():
 
     with sd.RawInputStream(samplerate=samplerate, blocksize=8000, dtype='int16',
                            channels=1, callback=callback):
-        say("Джарвис активен. Ожидаю команд.")
+        say("Сэр, все системы запущены. Я снова здесь, чтобы исправлять за людей их ошибки и притворяться, что вы — главный. Поехали..")
         rec = vosk.KaldiRecognizer(model, samplerate)
 
         while True:
